@@ -1,0 +1,268 @@
+body {
+	background-color: #F7768E;
+	margin: 0px;
+}
+
+#container {
+	background-color: #F7768E;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 92%;
+	height: 92%;
+	margin: auto;
+}
+
+#logo-background {
+	background-color: #1A1B26;
+	position: absolute;
+	height: 100%;
+	max-width: min(100vh, 100vw);
+	max-height: min(100vh, 100vw);
+	left: 50%;
+	transform: translateX(-50%);
+	object-fit: contain;
+	aspect-ratio: 1 / 1;
+	border-radius: 5%;
+}
+
+.skull-part {
+	background-color: #C0CAF5;
+}
+
+.hole {
+	background-color: #1A1B26;
+}
+
+#skull-top {
+	position: absolute;
+	width: 58%;
+	height: 48%;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top-left-radius: 50% 48%;
+	border-top-right-radius: 50% 48%;
+	border-bottom-left-radius: 36% 62%;
+	border-bottom-right-radius: 36% 62%;
+}
+
+.eye-hole {
+	z-index: 100;
+	position: absolute;
+	width: 18%;
+	height: 16%;
+	top: 30%;
+	transform: rotate(-6deg);
+	border-top-left-radius: 40% 82%;
+	border-top-right-radius: 88% 50%;
+	border-bottom-left-radius: 32% 32%;
+	border-bottom-right-radius: 100% 85%;
+}
+
+#left-eye-hole {
+	left: 29%;
+}
+
+#right-eye-hole {
+	left: 71%;
+	transform: scaleX(-1) translateX(100%);
+}
+
+.nostril-hole {
+	z-index: 100;
+	position: absolute;
+	width: 5%;
+	height: 8%;
+	top: 50%;
+	border-top-left-radius: 100% 100%;
+	border-top-right-radius: 12% 12%;
+	border-bottom-left-radius: 12% 12%;
+	border-bottom-right-radius: 12% 12%;
+}
+
+#left-nostril-hole {
+	left: 44.7%;
+}
+
+#right-nostril-hole {
+	left: 55.3%;
+	transform: scaleX(-1) translateX(100%);
+}
+
+.cheek {
+	position: absolute;
+	width: 14%;
+	height: 20%;
+	top: 40.2%;
+	border-top-left-radius: 88% 100%;
+	border-bottom-left-radius: 18% 20%;
+}
+
+#left-cheek {
+	left: 24%;
+}
+
+#right-cheek {
+	left: 76%;
+	transform: scaleX(-1) translateX(100%);
+}
+
+#jaw-top {
+	position: absolute;
+	width: 28%;
+	height: 10%;
+	top: 56%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top-left-radius: 10% 52%;
+	border-top-right-radius: 10% 52%;
+	border-bottom-left-radius: 4% 22%;
+	border-bottom-right-radius: 4% 22%;
+}
+
+.animated {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+.jaw-vertical-part {
+	position: absolute;
+	width: 5%;
+	height: 25.6%;
+	top: 57%;
+	border-bottom-left-radius: 100% 90%;
+	animation-name: jaw-vertical-part-drop;
+}
+
+#jaw-left {
+	left: 31.1%;
+}
+
+#jaw-right {
+	left: 68.9%;
+	transform: scaleX(-1) translateX(100%);
+}
+
+.top-teeth {
+	position: absolute;
+	width: 4%;
+	height: 6%;
+	top: 65.8%;
+	border-bottom-left-radius: 50% 20%;
+	border-bottom-right-radius: 50% 20%;
+}
+
+.bottom-teeth {
+	position: absolute;
+	width: 4%;
+	height: 6%;
+	top: 72%;
+	border-top-left-radius: 50% 20%;
+	border-top-right-radius: 50% 20%;
+	animation-name: bottom-teeth-drop;
+}
+
+#tooth-1 {
+	left: 39.0%;
+	transform: translateX(-50%);
+}
+
+#tooth-2 {
+	left: 43.4%;
+	transform: translateX(-50%);
+}
+
+#tooth-3 {
+	left: 47.8%;
+	transform: translateX(-50%);
+}
+
+#tooth-4 {
+	left: 52.2%;
+	transform: translateX(-50%);
+}
+
+#tooth-5 {
+	left: 56.6%;
+	transform: translateX(-50%);
+}
+
+#tooth-6 {
+	left: 61.0%;
+	transform: translateX(-50%);
+}
+
+#tooth-7 {
+	left: 39.0%;
+	transform: translateX(-50%);
+}
+
+#tooth-8 {
+	left: 43.4%;
+	transform: translateX(-50%);
+}
+
+#tooth-9 {
+	left: 47.8%;
+	transform: translateX(-50%);
+}
+
+#tooth-10 {
+	left: 52.2%;
+	transform: translateX(-50%);
+}
+
+#tooth-11 {
+	left: 56.6%;
+	transform: translateX(-50%);
+}
+
+#tooth-12 {
+	left: 61.0%;
+	transform: translateX(-50%);
+}
+
+#jaw-bottom {
+	position: absolute;
+	width: 28%;
+	height: 10%;
+	top: 77.8%;
+	left: 50%;
+	transform: translate(-50%);
+	border-bottom-left-radius: 80% 92%;
+	border-bottom-right-radius: 80% 92%;
+	border-top-left-radius: 4% 22%;
+	border-top-right-radius: 4% 22%;
+	animation-name: jaw-bottom-drop;
+}
+
+@keyframes jaw-vertical-part-drop {
+	from {
+		top: 57%;
+	}
+	to {
+		top: 60%;
+	}
+}
+
+@keyframes bottom-teeth-drop {
+	from {
+		top: 72%;
+	}
+	to {
+		top: 75%;
+	}
+}
+
+@keyframes jaw-bottom-drop {
+	from {
+		top: 77.8%;
+	}
+	to {
+		top: 80.8%;
+	}
+}
